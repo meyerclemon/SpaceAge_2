@@ -1,0 +1,46 @@
+body {
+  position:fixed;
+  top:2%;
+  background-image: url("../images/solar-system-6.jpg");
+  background-size: 100%;
+  font-family: monospace;
+}
+
+h1, h2 {
+  font-weight: bolder;
+}
+
+hr {
+  border-width: thick;
+}
+
+li {
+  display: none;
+}
+.btn {
+  background-color: lightblue;
+  border-color: black;
+  color: black;
+  height: 40px;
+}
+
+.result {
+  display: none;
+  position: fixed;
+  left: 30%;
+  top: 40%;
+  background-color: lightblue;
+  border-style: outset;
+  width: 500px;
+  height: 250px;
+  font-size: 15px;
+}
+
+.jumbotron {
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  background-color: lightblue;
+  border-style: groove;
+  text-align: center;
+}

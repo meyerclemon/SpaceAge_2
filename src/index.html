@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Webpack Template</title>
-</head>
-<body>
-  <div class="container">
-    <h1>Webpack Template</h1>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <title>Super-Galactic Planetary Age Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+      <h1>Greetings, Earthling!</h1>
+      <h2>Welcome to the Super-Galactic Planetary Age Calculator</h2>
+      <hr>
+
+      <form id="ageCalculator">
+        <div class="form-group">
+        <h4>Enter the Earth date of your birth</h4>
+        <input type=text id="birthdate" value="0000-00-00" required>
+        <h4>Select a planet in our solar system</h4>
+        <select id="planet">
+          <option id="mercury" value="mercury">Mercury</option>
+          <option id="venus" value="venus">Venus</option>
+          <option id="earth" value="earth">Earth</option>
+          <option id="mars" value="mars">Mars</option>
+          <option id="jupiter" value="jupiter">Jupiter</option>
+          <option id="saturn" value="saturn">Saturn</option>
+          <option id="uranus" value="uranus">Uranus</option>
+          <option id="neptune" value="neptune">Neptune</option>
+        </select><br><br>
+        <button type="submit" id="btn">Find out!</button>
+      </div>
+      </form>
+    </div>
+      <hr>
+
+      <ul class="result">
+        <li><span id='mercury'></span></li>
+        <li><span id='venus'></span></li>
+        <li><span id='earth'></span></li>
+        <li><span id='mars'></span></li>
+        <li><span id='jupiter'></span></li>
+        <li><span id='saturn'></span></li>
+        <li><span id='uranus'></span></li>
+        <li><span id='neptune'></span></li>
+      </ul>
+
+    </div>
+  </body>
 </html>

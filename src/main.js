@@ -2,8 +2,10 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-// import { myCode } from './myCode';
+import { AgeCalculator } from '../src/AgeCalculator.js';
 
-$().ready(function(){
-  
-});
+$(document).ready(function() {
+  $("#ageCalculator").click(function(event) {
+    event.preventDefault();
+    const birthdate = $("input#birthdate").val();
+    const planet = $("input#planet").val();
